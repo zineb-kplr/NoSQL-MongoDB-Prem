@@ -81,4 +81,5 @@ db.posts.find({title: 'Awsome Post'})
 ```
 ![image](https://user-images.githubusercontent.com/73080397/212367515-ea8e3a18-bf0b-42ef-8571-187fa9cc9b46.png)
 
-* Trouver le seul article qui a le champ "likes".
+* Trouver le seul article qui a le champ "likes":
+
