@@ -20,3 +20,9 @@ db.posts.insert({
 ```
 db.posts.find().pretty()
 ```
+
+![image](https://user-images.githubusercontent.com/73080397/212326626-7e907689-ba2e-45cd-acfd-01e530c2f2f5.png)
+
+Comme vous pouvez le voir, nous avons maintenant les deux documents stockés. De plus, notre deuxième document n'a pas de *tags* ni de *location*. De plus, l'ordre des champs n'a pas d'importance. Ceci est dû au fait que MongoDB est *schema-less*. Cela signifie que nous n'avons pas eu à définir un schéma pour contraindre la forme de tout ce qui est stocké dans le système. Si vous êtes familier avec les bases de données relationnelles, cela peut sembler étrange. Cependant, c'est l'une des raisons pour lesquelles NoSQL est si puissant à l'échelle. 
+
+* Maintenant, disons que nous voulons trouver notre deuxième article. Pour ce faire, nous pouvons utiliser la méthode `find()` et chercher par son titre. C'est ce qu'on appelle communément l'interrogation de la base de données. 
