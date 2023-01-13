@@ -63,9 +63,9 @@ Une autre raison pour laquelle nous examinons la section du schéma est que, en 
 
 ![aws_post](https://user-images.githubusercontent.com/73080397/212390444-5757dd1f-e4f6-4679-8d2c-d76915e8671d.png)
 
-* Désellectionner les deux chaînes de caractères t aller sur le champ author:
-* Selectionner un prénom et remarquer que la notation par points est apparue dans le filtre:
+* Désellectionner les deux chaînes de caractères, aller sur le champ author et sélectionner un prénom:
+* Sélectionner un prénom et remarquer que la notation par points est apparue dans le filtre:
 
 ![aws_post](https://user-images.githubusercontent.com/73080397/212391567-54fee95d-c793-44fe-8d06-f83031eab517.png)
 
-
+* Désellectionner le prénom et aller dans le champs **location**
