@@ -38,4 +38,43 @@ show dbs
 
 Comme vous pouvez le voir, il y a trois bases de données déjà créées par défaut. Elles sont utilisées par MongoDB lui-même pour stocker les utilisateurs, la configuration et d'autres données.
 
+En tant que débutants, nous ne sommes pas vraiment concernés par ces bases, mais puisqu'elles sont là et que nous sommes curieux, il n'y a aucun mal à y jeter un coup d'œil. Par exemple, voyons ce qu'il y a dans la BDD admin.
 
+```
+use admin
+```
+![image](https://user-images.githubusercontent.com/73080397/212309121-24589e0e-491a-4072-822b-ed8960068e6f.png)
+
+L'interpréteur de commandes nous informe qu'il est passé à la base de données admin, et attend d'autres instructions. Afin de voir ce qu'il y a dedans, nous voulons regarder les collections contenues dans la base de données, donc nous tapons :
+
+```
+show collections
+```
+![image](https://user-images.githubusercontent.com/73080397/212309993-24392ade-8b44-49f9-b7ce-6f442d147d2c.png)
+
+Comme vous pouvez le voir, la base de données admin ne contient pour l'instant qu'une seule collection, appelée system.version. 
+
+Une collection, dans la nomenclature NoSQL, est conceptuellement similaire à une table dans les bases de données relationnelles. Cependant, dans le contexte d'une base de données documentaire NoSQL, elle est nommée à juste titre collection, puisqu'il s'agit, en fait, d'une collection de différents documents. 
+
+Nous allons maintenant voir à quoi ressemble un document réel. En dehors des commandes telles que celles que nous avons utilisées jusqu'à présent, "use" et "show", nous pouvons utiliser le JavaScript standard dans le shell MongoDB:
+
+Écrivons "db.system.version.find()". Donc, nous avons utilisé l'objet db pour accéder à la collection system.version, et, sur cela, nous exécutons la méthode find(), qui, lorsqu'aucun argument n'a été spécifié, renvoie tous les documents disponibles dans la collection. 
+
+```
+db.system.version.find()
+```
+![image](https://user-images.githubusercontent.com/73080397/212310692-44b6dcb5-6b89-4e58-8996-bee04e2d2b4a.png)
+
+Nous pouvons donc dire en toute confiance que cette collection contient un document. Pour confirmer cela, nous pouvons utiliser une autre méthode appelée "count()". Nous écrivons donc ```db.system.version.count()```, qui renvoie le nombre de documents dans une collection:
+
+![image](https://user-images.githubusercontent.com/73080397/212311611-7ffe5164-1da2-41b5-832a-521aeae49535.png)
+
+ Un document, comme vous pouvez le voir, est très similaire à un objet JSON ordinaire. Le document que nous voyons contient deux champs. Un champ est une construction similaire à une colonne dans une base de données relationnelle, mais nous verrons bientôt que c'est beaucoup plus. Dans ce cas, nous avons un champ `_id`, qui contient une chaîne, FeatureCompatibilityVersion, et un champ appelé `version`, qui contient la chaîne 4.4.
+ 
+ Maintenant, effaçons le shell en utilisant la commande `cls`
+ 
+ Alors... où en étions-nous ? Si nous ne nous souvenons pas de la base de données sur laquelle nous travaillions, nous pouvons simplement taper `db` pour demander à MongoDB. 
+ 
+ Maintenant, créons une base de données. Pour ce faire, nous pouvons taper `use myFirstDatabase` Ok. MongoDB nous indique qu'il a basculé vers la nouvelle base de données. 
+ 
+ 
