@@ -59,3 +59,8 @@ Une autre raison pour laquelle nous examinons la section du schéma est que, en 
 ![aws_post](https://user-images.githubusercontent.com/73080397/212388211-5761df07-c8db-48ab-811d-4559a063238d.png)
 
 * Regardons le texte du filtre. Comme vous pouvez le voir, nous avons une requête que nous avons déjà apprise auparavant, en spécifiant simplement le nom du champ et le contenu que nous recherchons. C'est ce que nous utiliserions dans une méthode `find()`, ou comme premier paramètre de la méthode `update()`
+* Maintenant, appuyez sur la touche Shift et cliquez sur "MongoDB rules". Vous voyez que le texte du filtre a changé. Nous recherchons maintenant tous les articles qui portent le titre "Awesome Post" ou "MongoDB rules". Pour ce faire, MongoDB Compass a utilisé l'opérateur `$in`, qui attend un tableau, dans ce cas des chaînes de caractères. 
+
+![aws_post](https://user-images.githubusercontent.com/73080397/212390444-5757dd1f-e4f6-4679-8d2c-d76915e8671d.png)
+
+
