@@ -82,4 +82,26 @@ db.posts.find({title: 'Awsome Post'})
 ![image](https://user-images.githubusercontent.com/73080397/212367515-ea8e3a18-bf0b-42ef-8571-187fa9cc9b46.png)
 
 * Trouver le seul article qui a le champ "likes":
+```js
+db.posts.find(
+		{
+			$and: [
+				{
+					title: 'Awsome Post'
+				},
+				{
+					likes: {
+						$exists: true
+					}
+				}
+			]
+		}
+	)
+```
+![image](https://user-images.githubusercontent.com/73080397/212379012-35c25f73-3667-4b87-8a43-40fca6a6c40f.png)
+
+Seul le document avec le titre "Awesome Post" et le champ likes présent a été trouvé et renvoyé. 
+
+Félicitations ! Vous avez appris à insérer et à mettre à jour plus d'un document à la fois. Vous avez également appris à rechercher l'existence d'un champ.
+
 
