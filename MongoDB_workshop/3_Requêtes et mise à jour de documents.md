@@ -101,3 +101,9 @@ db.posts.update({
 		}
 	)
 ```
+* Vérifier: flèche en haut 2 fois pour revenir à la requête de vérification :)
+
+![image](https://user-images.githubusercontent.com/73080397/212339639-f97f489f-e8cd-4fbf-82e4-0dcc40c15af6.png)
+
+
+Super ! Vous avez appris les bases de l'insertion et de la mise à jour de documents, ainsi que de l'interrogation et du tri. Dans les prochaines tâches, vous apprendrez à insérer et à mettre à jour plusieurs documents à la fois.
