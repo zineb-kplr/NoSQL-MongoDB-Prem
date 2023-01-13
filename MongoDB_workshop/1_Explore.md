@@ -76,5 +76,21 @@ Nous pouvons donc dire en toute confiance que cette collection contient un docum
  Alors... où en étions-nous ? Si nous ne nous souvenons pas de la base de données sur laquelle nous travaillions, nous pouvons simplement taper `db` pour demander à MongoDB. 
  
  Maintenant, créons une base de données. Pour ce faire, nous pouvons taper `use myFirstDatabase` Ok. MongoDB nous indique qu'il a basculé vers la nouvelle base de données. 
+ Cependant, si nous exécutons à nouveau `show dbs`, notre base de données n'est pas listée. C'est parce qu'elle ne contient encore rien. 
  
+ ![image](https://user-images.githubusercontent.com/73080397/212314742-8aa5ac25-aa66-41fb-a721-3041aa866e50.png)
+
+ Mais, maintenant, nous allons créer une collection. 
  
+ ```
+ db.createCollection("myFirstCollection")
+ ```
+ 
+ Maintenant, si nous exécutons `show dbs`, nous pouvons voir que notre base de données a été correctement créée. Et si nous exécutons `show collections`, nous pouvons voir que notre première collection a également été créée. 
+ 
+ ![image](https://user-images.githubusercontent.com/73080397/212315634-90ada4dc-a907-46e1-bd79-4c736245e2ca.png)
+
+ 
+ Maintenant, nous allons effacer le shell à nouveau. 
+ 
+ Alors, félicitations ! Vous venez d'explorer votre première instance, base de données et collection MongoDB. Vous avez eu un aperçu de ce qu'est un document et vous avez créé votre première base de données et votre première collection. Dans notre prochaine tâche, nous allons créer notre premier document. A bientôt ! 
