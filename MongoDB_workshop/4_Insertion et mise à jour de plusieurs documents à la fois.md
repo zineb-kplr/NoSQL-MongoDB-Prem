@@ -59,4 +59,19 @@ db.posts.find(
 
 ![image](https://user-images.githubusercontent.com/73080397/212365062-e3841017-99ef-48b4-83b8-7c556c60c0e7.png)
 
+Maintenant, nous aimerions réparer cela. Nous voulons mettre à jour tous les documents en même temps. Pour ce faire, nous devons spécifier des options pour notre méthode de mise à jour. 
+```js
+db.posts.update(
+	{},
+	{
+		$set: {
+			published: false
+		}
+	},
+	{multi: true}
+)
+```
+![image](https://user-images.githubusercontent.com/73080397/212366810-11e2b3ee-9d75-4864-9fef-60fcd6aafd98.png)
+
+Maintenant c'est beaucoup mieux. Il dit qu'il a fait correspondre 4 documents, et qu'il a modifié 3 documents. C'est parce que, bien sûr, l'un de nos documents avait déjà le champ publié à false.
 
