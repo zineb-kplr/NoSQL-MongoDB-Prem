@@ -75,3 +75,10 @@ db.posts.update(
 
 Maintenant c'est beaucoup mieux. Il dit qu'il a fait correspondre 4 documents, et qu'il a modifié 3 documents. C'est parce que, bien sûr, l'un de nos documents avait déjà le champ publié à false.
 
+* Retrouver nos deux postes portant le même titre :
+```
+db.posts.find({title: 'Awsome Post'})
+```
+![image](https://user-images.githubusercontent.com/73080397/212367515-ea8e3a18-bf0b-42ef-8571-187fa9cc9b46.png)
+
+* Trouver le seul article qui a le champ "likes".
