@@ -68,4 +68,5 @@ Une autre raison pour laquelle nous examinons la section du schéma est que, en 
 
 ![aws_post](https://user-images.githubusercontent.com/73080397/212391567-54fee95d-c793-44fe-8d06-f83031eab517.png)
 
-* Désellectionner le prénom et aller dans le champs **location**
+Félicitations ! Dans cette tâche, vous avez commencé à vous familiariser avec MongoDB Compass, et vous avez appris à analyser le schéma d'une collection. 
+
