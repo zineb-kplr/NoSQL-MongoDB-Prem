@@ -1,0 +1,70 @@
+[
+  {
+    "database": "blog",
+    "collection": "posts_big",
+    "count": 5000000,
+    "content": {
+      "_id": {
+        "type": "ref",
+        "id": 1,
+        "refContent": {
+          "type": "objectId"
+        }
+      },
+      "title": {
+        "type": "string",
+        "unique": true,
+        "minLength": 10,
+        "maxLength": 40
+      },
+      "body": {
+        "type": "faker",
+        "method": "Quote"
+      },
+      "date": {
+        "type": "date",
+        "startDate": "2020-01-01T00:00:00+00:00",
+        "endDate": "2020-12-31T22:00:00+00:00"
+      },
+      "tags": {
+        "type": "array",
+        "size": 3,
+        "arrayContent": {
+          "type": "faker",
+          "method": "ProgrammingLanguage"
+        }
+      },
+      "author": {
+        "type": "object",
+        "objectContent": {
+          "name": {
+            "type": "faker",
+            "method": "FirstName"
+          },
+          "surname": {
+            "type": "faker",
+            "method": "LastName"
+          }
+        }
+      },
+      "location": {
+        "type": "object",
+        "objectContent": {
+          "type": {
+            "type": "constant",
+            "constVal": "Point"
+          },
+          "coordinates": {
+            "type": "array",
+            "size": 2,
+            "arrayContent": {
+              "type": "double",
+              "minDouble": -90,
+              "maxDouble": 90
+            }
+          }
+        }
+      }
+    }
+  }
+]
