@@ -39,7 +39,7 @@ Vous pouez remarquer la création de la collection **posts_big** avec 5 millions
 
  nous pouvons voir le résumé des performances de la requête. C'est quelque chose que nous voulons toujours vérifier et faire lorsque nous créons et gérons une base de données. Nous voulons qu'elle soit performante, et cela dépend de ce que l'application recherche dans les données, et de la façon dont la base de données est organisée pour s'adapter à ces requêtes.
  
-* nous pouvons voir que nous avons deux documents retournés, comme prévu. 
+* Nous pouvons voir que nous avons deux documents retournés, comme prévu. 
 * La requête totale a pris 0 milliseconde pour s'exécuter, donc probablement un temps très, très bref. 
 * Ensuite, nous avons 0 clé d'index examinée, ce que nous expliquerons plus tard. Pour l'instant, notez simplement que le nombre est de 0. 
 * Plus important encore, nous voyons que la base de données a dû examiner 4 documents, donc tous, pour trouver notre article par titre. 
