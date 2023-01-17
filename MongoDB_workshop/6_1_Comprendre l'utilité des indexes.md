@@ -1,4 +1,4 @@
-# 6.2.Comprendre l'utilité des indexes
+# 6.1.Comprendre l'utilité des indexes
 
 Dans cette tâche, nous allons comprendre l'utilité des index. 
 
