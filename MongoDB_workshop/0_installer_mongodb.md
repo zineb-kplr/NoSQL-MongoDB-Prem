@@ -50,3 +50,7 @@ Installer MongoDB Compass
 ```
 sudo dpkg -i mongodb-compass_1.35.0_amd64.deb
 ```
+Start:
+```
+mongodb-compass
+```
