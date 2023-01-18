@@ -43,3 +43,15 @@ Vous pouez remarquer la création de la collection **posts_big** avec 5 millions
 * La requête totale a pris 0 milliseconde pour s'exécuter, donc probablement un temps très, très bref. 
 * Ensuite, nous avons 0 clé d'index examinée, ce que nous expliquerons plus tard. Pour l'instant, notez simplement que le nombre est de 0. 
 * Plus important encore, nous voyons que la base de données a dû examiner 4 documents, donc tous, pour trouver notre article par titre. 
+
+![image](https://user-images.githubusercontent.com/73080397/212862698-63c2c1c4-1584-47c1-ab6f-1983367e7dac.png)
+
+
+ Ceci est confirmé par la partie inférieure, qui est la liste des étapes que la base de données a suivies pour trouver notre document. Nous voyons que, encore une fois, en 0 milliseconde, donc un temps très court, elle a examiné 4 documents pendant un COLLSCAN (un scan de collection). Cela signifie qu'il a dû vérifier tous les documents un par un, afin de trouver les articles avec le titre que nous avons demandé.
+
+Cela ne semble pas très efficace, n'est-ce pas ? Vous pourriez demander, quel est le problème ? Il l'a fait en 0 milliseconde. C'est super rapide de toute façon. Mais... pas si rapide. 
+
+* Retournons à notre collection **post_big**. 
+* Maintenant, allons au schéma, et analysons-le à nouveau: avant de le faire, cliquons sur les options, et mettons le temps maximum en millisecondes **MaxTimeMS** à 120 000. Il s'agit d'une base de données assez importante, après tout, et nous ne voulons pas que l'exécution soit arrêtée prématurément après 5 secondes, si elle prend plus de temps:
+
+
