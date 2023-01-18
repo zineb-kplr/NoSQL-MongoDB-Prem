@@ -93,4 +93,4 @@ db.system.version.find()
  
  Maintenant, nous allons effacer le shell à nouveau. 
  
- Alors, félicitations ! Vous venez d'explorer votre première instance, base de données et collection MongoDB. Vous avez eu un aperçu de ce qu'est un document et vous avez créé votre première base de données et votre première collection. Dans notre prochaine tâche, nous allons créer notre premier document. A bientôt ! 
+ Félicitations ! Vous venez d'explorer votre première instance, base de données et collection MongoDB. Vous avez eu un aperçu de ce qu'est un document et vous avez créé votre première base de données et votre première collection. Dans notre prochaine tâche, nous allons créer notre premier document.
