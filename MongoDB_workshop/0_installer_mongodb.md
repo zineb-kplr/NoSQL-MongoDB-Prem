@@ -39,3 +39,14 @@ echo "deb [ arch=amd64,arm64 ] https://repo.mongodb.org/apt/ubuntu focal/mongodb
 apt update
 apt install -y mongodb-org
 ```
+
+
+Télecharger MongoDB Compass
+```
+wget https://downloads.mongodb.com/compass/mongodb-compass_1.35.0_amd64.deb
+```
+
+Installer MongoDB Compass
+```
+sudo dpkg -i mongodb-compass_1.35.0_amd64.deb
+```
