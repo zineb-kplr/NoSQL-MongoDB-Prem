@@ -36,12 +36,29 @@ Et voilà, notre index a été créé avec succès!
 ```
 ![image](https://user-images.githubusercontent.com/73080397/213521964-d6013e49-9fec-4217-9ab4-af8b7bb7934c.png)
 
-* Retourner dans la collecction **posts_big** > Analyse > Aller dans le champs **location** > Zoomer sur la carte jusqu'à faire apparaître les points séparés 
+* Retourner dans la collection **posts_big** > Analyse > Aller dans le champs **location** > Zoomer sur la carte jusqu'à faire apparaître les points séparés 
 * Cliquer sur Draw a circle et entourer un point d'un cercle pour faire apparaître le filtre de localisation:
 
-![image](https://user-images.githubusercontent.com/73080397/213525387-7d256758-dfce-43e1-b3d8-9bb46caf5c5d.png)
+![image](https://user-images.githubusercontent.com/73080397/213550926-986a2c53-3984-4de6-8c5e-88f04a30528c.png)
+
+Aller dans Explain Plan > Explain 
+
+![image](https://user-images.githubusercontent.com/73080397/213551375-d6e51fad-f782-4d81-8dca-cc7eb76d4e56.png)
+
+Comme vous pouvez le voir, cela prend 7,5 secondes, dans mon cas, il s'agit d'un balayage de collection sur 5 millions de documents.
+
+Comme vous pouvez le deviner, nous pouvons créer un index ici aussi. Plus important encore, nous pouvons créer un index adapté aux données géographiques. 
+
+* Indexes > Create index > index fields: location et type 2dsphere > create index
+
+![image](https://user-images.githubusercontent.com/73080397/213551993-4c8e190f-78ee-4266-bf12-cbc5f0f6df7e.png)
+
+* Explain plan > Explain 
+
+![image](https://user-images.githubusercontent.com/73080397/213552895-f0044c3f-6249-4458-a5a2-d91f28009d60.png)
 
 
-
-
+ Comme vous l'avez peut-être deviné, tout fonctionne maintenant beaucoup plus vite. C'est génial !
+ 
+ Fin du workshop
 
