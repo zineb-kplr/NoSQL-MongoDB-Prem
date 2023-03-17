@@ -18,6 +18,7 @@ db.posts.insert({
 	date: ISODate('2023-03-30T03:00:00Z')
 })
 ```
+
 * Vérifier le document:
 ```
 db.posts.find().pretty()
